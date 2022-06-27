@@ -1,0 +1,10 @@
+.main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .displays {
+    display: grid;
+    grid-template-rows: 5fr 40px 3fr;
+    height: 100%;
+}

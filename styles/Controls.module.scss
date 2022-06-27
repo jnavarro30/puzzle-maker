@@ -1,0 +1,19 @@
+.controls {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+
+    .play:hover {
+        cursor: pointer;
+        color: green;
+    }
+
+    .stop:hover {
+        cursor: pointer;
+        color: red;
+    }
+}
