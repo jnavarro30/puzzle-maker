@@ -1,0 +1,35 @@
+.library {
+  text-align: center;
+  .title {
+    padding: 1rem;
+  }
+}
+
+.body {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  .list {
+    border: 2px solid yellow;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .item {
+      color: red;
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .input {
+      margin: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

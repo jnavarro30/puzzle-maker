@@ -1,8 +1,15 @@
+import styles from "../styles/Library.module.scss";
 
+interface ItemProps {
+  name: string;
+}
 
-const LibraryItem = () => {
+const LibraryItem = ({ name }: ItemProps) => {
   return (
-    <div>LibraryItem 0</div>
+    <li className={styles.item}>
+      <input className={styles.input} type="checkbox" id="1" name="1" value="isPrime"  />
+      <p>{name}</p>
+    </li>
   )
 }
 

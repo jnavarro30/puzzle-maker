@@ -1,12 +1,17 @@
 import LibraryItem from "./LibraryItem";
+import styles from "../styles/Library.module.scss";
+import { puzzles } from "./Puzzles";
 
 const LibraryList = () => {
+  
+
   return (
-    <ul className="list">
-        <LibraryItem />
-        <li className="item">1</li>
-        <li className="item">2</li>
-        <li className="item">3</li>
+    <ul className={styles.list}>
+      {
+        puzzles.map(item => (
+          <LibraryItem name={item.name} />
+        ))
+      }
     </ul>
   )
 }

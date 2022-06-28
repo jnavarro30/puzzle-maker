@@ -1,7 +1,16 @@
 .description {
-    text-align: center;
+    display: grid;
+    justify-items: center;
+
+    .title {
+        padding: 1rem;
+    }
 
     .summary, .examples {
         padding: 1rem;
+    }
+
+    .example {
+        padding: 0.5rem;
     }
 }
