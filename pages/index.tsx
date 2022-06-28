@@ -4,12 +4,7 @@ import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      <div className={styles.container}>
-        <Navbar />
-        <Main />
-      </div>
-    </div>
+    <Main />
   );
 };
 
