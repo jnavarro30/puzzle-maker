@@ -7,20 +7,18 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <Link href="/create">
         <i className={styles.i}>
-          <PencilPlus size={36} color="white" />
+          <PencilPlus size={36} />
         </i>
       </Link>
       <Link href="/">
-        <a>
-          <Home size={36} color="white" />
-        </a>
+        <i className={styles.i}>
+          <Home size={36} />
+        </i>
       </Link>
       <Link href="/library">
-        <a>
-          <i className={styles.i}>
-            <Book size={36} color="white" />
-          </i>
-        </a>
+        <i className={styles.i}>
+          <Book size={36} />
+        </i>
       </Link>
     </div>
   );

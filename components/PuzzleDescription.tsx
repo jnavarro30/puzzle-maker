@@ -6,16 +6,16 @@ const PuzzleDescription = () => {
     return (
     <section className={styles.description}>
         <h1 className={styles.title}>Description</h1>
-        <p className={styles.summary}>
+        <div className={styles.summary}>
             {puzzles[0].description}
-        </p>
-        <p className={styles.examples}>
+        </div>
+        <div className={styles.examples}>
             {
             puzzles[0].examples?.map(example => (
                 <div className={styles.example}>{example}</div>
             ))
             }
-        </p>
+        </div>
     </section>
     )
 };
